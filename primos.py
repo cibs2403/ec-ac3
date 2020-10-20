@@ -2,6 +2,7 @@ import os
 from flask import Flask, jsonify, request
 from math import sqrt
 
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -10,20 +11,19 @@ def nao_entre_em_panico():
     fim = 100
     
     a = 1
-    b = 1
     numero = 3
     
-    primos = "2,"
+    primos = "2 -,"
 
-    while b < fim:
-        ehprimo = 1
+    while a < fim:
+        primo = 1
         for i in range(2,numero):
             if numero % i == 0:
-                ehprimo = 0
+                primo = 0
                 break
-        if (ehprimo):
-            primos = primos + str(numero) + ','
-            b+=1
+        if (primo):
+            primos+=str(numero) + "-"
+            a+=1
     return primos 
 
 
