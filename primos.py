@@ -13,7 +13,7 @@ def nao_entre_em_panico():
     a = 1
     numero = 3
     
-    primos = "2 -,"
+    primos = "2-"
 
     while a < fim:
         primo = 1
@@ -23,7 +23,8 @@ def nao_entre_em_panico():
                 break
         if (primo):
             primos+=str(numero) + "-"
-            a+=1
+            a +=1
+        numero+=1
     return primos 
 
 
