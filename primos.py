@@ -23,7 +23,7 @@ def nao_entre_em_panico():
                 break
         if (ehprimo):
             primos = primos + str(numero) + ','
-            p+=1
+            b+=1
     return primos 
 
 
